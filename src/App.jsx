@@ -34,7 +34,7 @@ export default function App() {
         <input type="submit" value="Search"></input>
       </form>
       <h1 className="weatherDisplay">
-        The weath in {City} is {Temperature}°C
+        The weather in {City} is {Temperature}°C
       </h1>
     </div>
   );
