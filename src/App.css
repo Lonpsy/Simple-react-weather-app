@@ -1,0 +1,12 @@
+body {
+  background-color: rgb(58, 42, 72);
+  color: rgb(251, 243, 243);
+}
+.weatherDisplay {
+  font-family: "Arial", sans-serif;
+  font-size: 24px;
+  color: rgb(251, 243, 243);
+}
+.formArea {
+  margin-top: 50px;
+}
