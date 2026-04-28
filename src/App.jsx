@@ -8,6 +8,8 @@ import axios from "axios";
 export default function App() {
   const [City, setCity] = useState("");
   const [Temperature, setTemperature] = useState("");
+  const [Condition, setCondition] = useState("");
+  const [Icon, setIcon] = useState("");
   function updateCity(event) {
     event.preventDefault();
     setCity(event.target.value);
@@ -15,6 +17,8 @@ export default function App() {
   function handleResponse(response) {
     console.log(response.data);
     setTemperature(response.data.temperature.current);
+    setCondition(response.data.condition.description);
+    setIcon(response.data.condition.icon_url);
   }
   function handleSubmit(event) {
     event.preventDefault();
@@ -42,7 +46,7 @@ export default function App() {
         </form>
 
         <h2 className="displayReport">
-          The weather in {City} is {Math.round(Temperature)}°C
+          The weather in {City} is {Math.round(Temperature)}°C {Condition}
         </h2>
       </div>
     </div>
