@@ -42,7 +42,7 @@ export default function App() {
         </form>
 
         <h2 className="displayReport">
-          The weather in {City} is {Temperature}°C
+          The weather in {City} is {Math.round(Temperature)}°C
         </h2>
       </div>
     </div>
