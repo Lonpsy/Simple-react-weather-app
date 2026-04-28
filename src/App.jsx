@@ -13,7 +13,7 @@ export default function App() {
     setCity(event.target.value);
   }
   function handleResponse(response) {
-    console.log(response.data.temperature.current);
+    console.log(response.data);
     setTemperature(response.data.temperature.current);
   }
   function handleSubmit(event) {
@@ -25,17 +25,26 @@ export default function App() {
   }
   return (
     <div className="App">
-      <form className="formArea" onSubmit={handleSubmit}>
-        <input
-          type="text"
-          placeholder="Enter your city"
-          onChange={updateCity}
-        ></input>
-        <input type="submit" value="Search"></input>
-      </form>
-      <h1 className="weatherDisplay">
-        The weather in {City} is {Temperature}°C
-      </h1>
+      {" "}
+      <div className="formArea">
+        <form onSubmit={handleSubmit}>
+          <input
+            className="inputArea"
+            type="text"
+            placeholder="Enter your city"
+            onChange={updateCity}
+          ></input>
+          <input
+            className="searchInputArea"
+            type="submit"
+            value="Search"
+          ></input>
+        </form>
+
+        <h1 className="displayReport">
+          The weather in {City} is {Temperature}°C
+        </h1>
+      </div>
     </div>
   );
 }
