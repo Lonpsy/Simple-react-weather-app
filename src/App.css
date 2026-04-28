@@ -1,16 +1,21 @@
 body {
   background-color: rgb(54, 37, 71);
 }
+.headerTitle {
+  font-size: 50px;
+  color: rgb(211, 219, 225);
+  margin-top: 30px;
+}
 .formArea {
   background-color: rgb(211, 219, 225);
   max-width: 600px;
   border: 1px solid;
   margin: 0 auto;
-  margin-top: 30px;
+  margin-top: 50px;
   padding: 50px;
   padding-bottom: 50px;
   border-radius: 12px;
-  box-shadow: 0px 30px 40px rgb(185, 45, 182);
+  box-shadow: 0px 10px 20px rgb(185, 45, 182);
 }
 .displayReport {
   font-size: 40px;

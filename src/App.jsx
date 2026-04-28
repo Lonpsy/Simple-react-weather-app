@@ -25,7 +25,7 @@ export default function App() {
   }
   return (
     <div className="App">
-      {" "}
+      <h1 className="headerTitle">My first React app</h1>
       <div className="formArea">
         <form onSubmit={handleSubmit}>
           <input
@@ -41,9 +41,9 @@ export default function App() {
           ></input>
         </form>
 
-        <h1 className="displayReport">
+        <h2 className="displayReport">
           The weather in {City} is {Temperature}°C
-        </h1>
+        </h2>
       </div>
     </div>
   );
